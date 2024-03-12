@@ -56,3 +56,11 @@ Finalmente una ruta de entrada a través de un Route53, luego por un WAF y final
 ![Diagrama componentes y conectores](./diagrams/components_connectors.svg)
 
 En este diagrama se pueden notar las conexiones que realizan los componentes a lo largo de la solución.
+
+## Observabilidad
+
+Se implementó observabilidad utilizando Prometheus con Grafana, a través de un controlador especial de Apache NIFI
+
+## Seguridad
+
+Desde el consumidor hacia NIFI se implementó TLS, y desde NIFI hacia los servicios back-end se implementó JWT. La información detallada de cada implementación está dispuesta en la documentación particular de cada componente.
