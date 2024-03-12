@@ -15,16 +15,19 @@ Desarrollado utilizando el framework de integración [Apache NIFI](https://nifi.
 
 Proyecto encargado de procesar y almacenar la información relacionada a un consumidor.
 Desarrollado utilizando Java 21 con [Spring Boot](https://spring.io/projects/spring-boot).
+[Ver Swagger](https://fcordonezo.github.io/AP202403_customer/)
 
 ### [→ AP2024_finance_product](https://github.com/fcordonezo/AP202403_finance_product)
 
 Proyecto encargado de procesar y almacenar la información relacionada a todos los productos financieros que operan en la solución.
 Desarrollado utilizando Java 21 con [Spring Boot](https://spring.io/projects/spring-boot).
+[Ver Swagger](https://fcordonezo.github.io/AP202403_finance_product/)
 
 ### [→ AP2024_decision_engine](https://github.com/fcordonezo/AP202403_decision_engine)
 
 Proyecto encargado de procesar, dado un cliente y una lista de productos financieros, cuál de estos productos aplica para el cliente especificado.
 Desarrollado utilizando Java 21 con [Spring Boot](https://spring.io/projects/spring-boot).
+[Ver Swagger](https://fcordonezo.github.io/AP202403_decision_engine/)
 
 ## Funcionalidad
 
@@ -43,6 +46,7 @@ En primer lugar el consumidor realiza la petición al componente de integración
 
 Actualmente el proyecto se encuenta únicamente en local, pero el modelo objetivo de despliegue a futuro es el siguiente:
 ![Modelo objetivo](./diagrams/target.svg)
+
 En donde se tiene un cluster de EKS en donde deberían estar desplegados todos los componentes en Deploys separados y con una política de HPA. El componente de observabilidad de Prometheus + Grafana también estaría dispuesto dentro de un Deploy independiente.  
 Aparte, bases de datos RDS para el almacenamiento de información persistente (customers y financeProducts).  
 Un secrets manager para almacenar los secretos de cada uno de los servicios.  
@@ -50,4 +54,5 @@ Finalmente una ruta de entrada a través de un Route53, luego por un WAF y final
 
 ## Diagrama de Componentes y Conectores
 ![Diagrama componentes y conectores](./diagrams/components_connectors.svg)
+
 En este diagrama se pueden notar las conexiones que realizan los componentes a lo largo de la solución.
