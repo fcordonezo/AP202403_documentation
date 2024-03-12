@@ -11,29 +11,25 @@ Habiendo analizado a fondo el problema propuesto, se planteó la creación de 3 
 ### [→ AP2024_integration_nifi](https://github.com/fcordonezo/AP202403_integration_nifi)
 
 Proyecto encargado de realizar la integración entre los componentes y entregar una respuesta procesada al consumidor final de la solución.
-Desarrollado utilizando el framework de integración [Apache NIFI](https://nifi.apache.org/).
-
+Desarrollado utilizando el framework de integración [Apache NIFI](https://nifi.apache.org/).  
 #### [Ver Swagger](https://fcordonezo.github.io/AP202403_integration_nifi/)
 
 ### [→ AP2024_customer](https://github.com/fcordonezo/AP202403_customer)
 
 Proyecto encargado de procesar y almacenar la información relacionada a un consumidor.
-Desarrollado utilizando Java 21 con [Spring Boot](https://spring.io/projects/spring-boot).
-
+Desarrollado utilizando Java 21 con [Spring Boot](https://spring.io/projects/spring-boot).  
 #### [Ver Swagger](https://fcordonezo.github.io/AP202403_customer/)
 
 ### [→ AP2024_finance_product](https://github.com/fcordonezo/AP202403_finance_product)
 
 Proyecto encargado de procesar y almacenar la información relacionada a todos los productos financieros que operan en la solución.
-Desarrollado utilizando Java 21 con [Spring Boot](https://spring.io/projects/spring-boot).
-
+Desarrollado utilizando Java 21 con [Spring Boot](https://spring.io/projects/spring-boot).  
 #### [Ver Swagger](https://fcordonezo.github.io/AP202403_finance_product/)
 
 ### [→ AP2024_decision_engine](https://github.com/fcordonezo/AP202403_decision_engine)
 
 Proyecto encargado de procesar, dado un cliente y una lista de productos financieros, cuál de estos productos aplica para el cliente especificado.
-Desarrollado utilizando Java 21 con [Spring Boot](https://spring.io/projects/spring-boot).
-
+Desarrollado utilizando Java 21 con [Spring Boot](https://spring.io/projects/spring-boot).  
 #### [Ver Swagger](https://fcordonezo.github.io/AP202403_decision_engine/)
 
 ## Funcionalidad
