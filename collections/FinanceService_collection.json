@@ -1,0 +1,814 @@
+{
+	"info": {
+		"_postman_id": "f250a272-4c96-4cc3-b11c-e3c172143a45",
+		"name": "assesment pragma marzo 2024",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11244321"
+	},
+	"item": [
+		{
+			"name": "customer",
+			"item": [
+				{
+					"name": "get customer by id",
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": [
+								{
+									"key": "privateKey",
+									"value": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDdybf3qLWXM2mY\nQj0LW6JNMZEksWLe3T9UYfSUshwc5jztehRSAF/5Zpu+ULi0Ql1j3NntjnOBHklh\nYbijgLaiUUO8FWMdUtABXzDso1v8je/Rq3rKTG+lVmUvPUb31kZCKCqJXPHzIY7S\nTwrgcn0380QWtR9jpn/mX4A8IpAbQfV31XIekKRM10UCMlprLZ8TfrwxCMJ6bTUc\nhRoMi8JgFxoBu/REUf7gv5e93sNom2MTzlGMnmGYXG6lq9hLRDI8D6Xc7ymx27q5\nBpPkkc5uOcZ/jNJgCOeH45+bthVT6yskNcVT0QmzCKE6F8fYE/2yIuj5qPjcny4y\nHXeVRcifAgMBAAECggEAEI4qKVZyl6LC0xa+r8ZbSx/UEcUb+D7Tp1zYgPD6oD2f\ndqqSMbzNbTR3k7E62FnL1tR5f/4OKSk1mQtOWQYWm+8s+zEtgNbZqACPClr3VtbR\ne/ks5UTnYJQeYXRVg9J+1Bljc3V4qglrO8+ipDZnmnGSN4+1lB6tlWizjcmWsDIM\nl7wUA1kJzqjQe9Htv2hosx37kmIvE4ygYc5JuzX+PSIhw4WlAuDDZWlMMkJadmjt\nRa+K4kxGDGwGc4Df4BR2NmL9AHcni4BDgXfpdCZOPMtKbiNwLtrgc3ZJ8Rme6mMi\nEiuD/TlT6Xx17LGQa6K7LFpJ5i1aIsE3TafrT3aFgQKBgQD90FgZGQ6JxsNMM40Q\nB21l32a9TXb1sy4tHxt9cDV5g5vxILQrluf7lUzZdTZb3veyrF1vDMQs4l1d/BYn\nj/ZjWwWQrJU+sh+fEwsMxdl1ZMeHRfabMwRTo5UXekwwU3cvIC7YRJKI05xHe2pJ\nPNUiZPeHBSZR7UHwNL/e7HvRsQKBgQDfssIEse8ZfjIotWafGEhG1YyoAF0vEZIi\np96liHdIEdaw2fHG+bk6BerPQxUBI7tb6S10FzxcBuUrD8TR9rvKiyehC0sOPD0a\nF6yriee9I72kq8dI2SEU67Luut58VzbWsDcqj7LTneLbdrKrVqHtj3KktEmzR4W+\nJ0VDtQsDTwKBgQCO3G458jiUpCPZCEsl8ohJBu21L5z9vtUG4LOAb2Ap/UIQ/u9q\neY4ptWeEHs1x+JZDI3GTyAPDn8Yd2H4/1nBAjEMdo4Z9u5TA3N8jWVmFEiycn2ym\n/pg426JXjKbFrLUw+VRktnQkP7d/JKA2iN8OdPY+MU/YXUr4ATjeKQ2ogQKBgBHH\nqoYnAmMbVa9Io8x3aJ9Ar/pWdRGdqujYQOkVTK3MxSyvVflDtgY3nC83HL9HcMfg\nY717b0+9OI/QpAswOkLiBpdVR3TtMsoVIaNMxb+RzKv+/0r5/xgjl8hD0BU/9Vrh\nDLF0VHlfbj2VVKQrsZkpMqqGrejzAV1Yz7eO9z4fAoGBAJxleg93ebcjMgqbK4YZ\nYnGbavF+rDCDQSOEDI4pMFiDnssin0yDk9mQNzGQh51HOrkkCzw228bf42GD+bRp\nHAuhtL56TshOyQz1xctHrAun3i53F8ptVuRs6VgMTN9pebjO5PnXlr8m1/F1yfzr\nhZo+WXrs2qarSCMSihQlqc3n\n-----END PRIVATE KEY-----\n",
+									"type": "string"
+								},
+								{
+									"key": "payload",
+									"value": "{\r\n  \"sub\": \"customer\",\r\n  \"name\": \"finance-service\",\r\n  \"iat\": {{$timestamp}}\r\n}",
+									"type": "string"
+								},
+								{
+									"key": "algorithm",
+									"value": "RS256",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "isSecretBase64Encoded",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "queryParamKey",
+									"value": "token",
+									"type": "string"
+								},
+								{
+									"key": "header",
+									"value": "{}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/api/development/v1/finance-service/customers/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"development",
+								"v1",
+								"finance-service",
+								"customers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all customers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/api/development/v1/finance-service/customers/",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"development",
+								"v1",
+								"finance-service",
+								"customers",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullName\": \"Nombre 1\",\r\n    \"income\": 190.1,\r\n    \"city\": \"Bogotá\",\r\n    \"accessPassword\": \"pass\",\r\n    \"countryCode\": \"CO\",\r\n    \"age\": 21\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/api/development/v1/finance-service/customers/",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"development",
+								"v1",
+								"finance-service",
+								"customers",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "put customer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullName\": \"Nombre 1\",\r\n    \"income\": 190.1,\r\n    \"city\": \"Bogotá\",\r\n    \"accessPassword\": \"pass\",\r\n    \"countryCode\": \"CO\",\r\n    \"age\": 21\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/api/development/v1/finance-service/customers/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"development",
+								"v1",
+								"finance-service",
+								"customers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete customer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/api/development/v1/finance-service/customers/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"development",
+								"v1",
+								"finance-service",
+								"customers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get openapi definition yaml",
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": [
+								{
+									"key": "payload",
+									"value": "{\r\n  \"sub\": \"customer\",\r\n  \"name\": \"finance-service\",\r\n  \"iat\": {{$timestamp}}\r\n}",
+									"type": "string"
+								},
+								{
+									"key": "privateKey",
+									"value": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDdybf3qLWXM2mY\nQj0LW6JNMZEksWLe3T9UYfSUshwc5jztehRSAF/5Zpu+ULi0Ql1j3NntjnOBHklh\nYbijgLaiUUO8FWMdUtABXzDso1v8je/Rq3rKTG+lVmUvPUb31kZCKCqJXPHzIY7S\nTwrgcn0380QWtR9jpn/mX4A8IpAbQfV31XIekKRM10UCMlprLZ8TfrwxCMJ6bTUc\nhRoMi8JgFxoBu/REUf7gv5e93sNom2MTzlGMnmGYXG6lq9hLRDI8D6Xc7ymx27q5\nBpPkkc5uOcZ/jNJgCOeH45+bthVT6yskNcVT0QmzCKE6F8fYE/2yIuj5qPjcny4y\nHXeVRcifAgMBAAECggEAEI4qKVZyl6LC0xa+r8ZbSx/UEcUb+D7Tp1zYgPD6oD2f\ndqqSMbzNbTR3k7E62FnL1tR5f/4OKSk1mQtOWQYWm+8s+zEtgNbZqACPClr3VtbR\ne/ks5UTnYJQeYXRVg9J+1Bljc3V4qglrO8+ipDZnmnGSN4+1lB6tlWizjcmWsDIM\nl7wUA1kJzqjQe9Htv2hosx37kmIvE4ygYc5JuzX+PSIhw4WlAuDDZWlMMkJadmjt\nRa+K4kxGDGwGc4Df4BR2NmL9AHcni4BDgXfpdCZOPMtKbiNwLtrgc3ZJ8Rme6mMi\nEiuD/TlT6Xx17LGQa6K7LFpJ5i1aIsE3TafrT3aFgQKBgQD90FgZGQ6JxsNMM40Q\nB21l32a9TXb1sy4tHxt9cDV5g5vxILQrluf7lUzZdTZb3veyrF1vDMQs4l1d/BYn\nj/ZjWwWQrJU+sh+fEwsMxdl1ZMeHRfabMwRTo5UXekwwU3cvIC7YRJKI05xHe2pJ\nPNUiZPeHBSZR7UHwNL/e7HvRsQKBgQDfssIEse8ZfjIotWafGEhG1YyoAF0vEZIi\np96liHdIEdaw2fHG+bk6BerPQxUBI7tb6S10FzxcBuUrD8TR9rvKiyehC0sOPD0a\nF6yriee9I72kq8dI2SEU67Luut58VzbWsDcqj7LTneLbdrKrVqHtj3KktEmzR4W+\nJ0VDtQsDTwKBgQCO3G458jiUpCPZCEsl8ohJBu21L5z9vtUG4LOAb2Ap/UIQ/u9q\neY4ptWeEHs1x+JZDI3GTyAPDn8Yd2H4/1nBAjEMdo4Z9u5TA3N8jWVmFEiycn2ym\n/pg426JXjKbFrLUw+VRktnQkP7d/JKA2iN8OdPY+MU/YXUr4ATjeKQ2ogQKBgBHH\nqoYnAmMbVa9Io8x3aJ9Ar/pWdRGdqujYQOkVTK3MxSyvVflDtgY3nC83HL9HcMfg\nY717b0+9OI/QpAswOkLiBpdVR3TtMsoVIaNMxb+RzKv+/0r5/xgjl8hD0BU/9Vrh\nDLF0VHlfbj2VVKQrsZkpMqqGrejzAV1Yz7eO9z4fAoGBAJxleg93ebcjMgqbK4YZ\nYnGbavF+rDCDQSOEDI4pMFiDnssin0yDk9mQNzGQh51HOrkkCzw228bf42GD+bRp\nHAuhtL56TshOyQz1xctHrAun3i53F8ptVuRs6VgMTN9pebjO5PnXlr8m1/F1yfzr\nhZo+WXrs2qarSCMSihQlqc3n\n-----END PRIVATE KEY-----",
+									"type": "string"
+								},
+								{
+									"key": "algorithm",
+									"value": "RS256",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "isSecretBase64Encoded",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "queryParamKey",
+									"value": "token",
+									"type": "string"
+								},
+								{
+									"key": "header",
+									"value": "{}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/development/v1/finance-service/customers/v3/api-docs.yaml",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"development",
+								"v1",
+								"finance-service",
+								"customers",
+								"v3",
+								"api-docs.yaml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get openapi gui",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/development/v1/finance-service/customers/swagger-ui/index.html#/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"development",
+								"v1",
+								"finance-service",
+								"customers",
+								"swagger-ui",
+								"index.html"
+							],
+							"hash": "/"
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "finance service",
+			"item": [
+				{
+					"name": "get finance product by id",
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": [
+								{
+									"key": "payload",
+									"value": "{\r\n  \"sub\": \"finance-product\",\r\n  \"name\": \"finance-service\",\r\n  \"iat\": {{$timestamp}}\r\n}",
+									"type": "string"
+								},
+								{
+									"key": "privateKey",
+									"value": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCfM7fDdX09em6w\nmhRN59rwOdb0vdI22enYMr9TwfYFP/0gT+yv62R5es3+DnssnmfsJxW8mh1+bzkI\n+FuXztRthhKFdOdVY2mewL3aYJnDJ0d1zdrebt+jdSD6DU0rKEx7cJUK/vQghxx3\nzj5lJng6U9QmXZWLYKsdG87xAotqMEVBthtDlT0AT+iYQXOAb02xiOhZdFfdnAKG\naK7DhVfRX5mYAx15kY2gsErkTcVH/IdHH3qdKvSiSrtPjXuxaAU0B9oRQesrdLfb\nB0jZDF8i2lzvXkbpmLRnQdA48UCarUInF3BcD3JF8uozrQ15ilOYI9PAgCFWMYVT\nngJgg2PxAgMBAAECggEAOtejwUPIsZNyHCYnARCEVKwcLkOG0i1DCFzhaLTVGOWo\nymugIPmRHnFsd82kaz51TMy5dQdFhXjYjN83A2o4C+81I0ytQFtJK5sz0OZJjt8S\nw5D9p581W7YsJSALeLshYbKf8/t+AhPOSt3ZJAvO/kgDrtaCMozdUhn4KA53txxh\nD/XvLTVF8i/UFqg3pGWNYRI5x53eK/MMR4qgOTVBjAZ1hMQkclGeQVJp5HotR7yH\nBQ5j6T9mgnvGfdNn15+umPul6gxymVRt5ptHVuez5RUnLbfRQUunq4tClvP/+tSz\n604qNDxDXP4zvAK4zBQLM6814qm3wDPe7+Qzp+i1wQKBgQDK67id1Vg0VF+i0Oos\ngTXkau6upB1DaXfl2w82oQZhOCnSQHVS4373Lqen+0GNXO1sQuUX20ez3/hmLLy6\noPCPq9mfV5fUkt0DEJo9cBHCGSFuhGiCzLZPbchSJKD+xL1NueRfF8mhIBzt7cFK\npHAsfyeNHg262LibtpgRJunYuQKBgQDI2G/UKh6wryzGLjCle6/i2U650iy2kLn4\nbzSREUkREcvVqO9FzJLRxFLFm5c3rRD/9zQQ8KvIGZ/tMFKybTsp5Z/XbVh+K13/\n/CjF2LKiOreg7mED4bvMeuAp655hR1cgdxygDZNyVdpfzgGbramNpXUJKLvpBale\nFJUz4RBY+QKBgGnuC/449Ua8FQDF1rlM6nlHaTo56hza3gBcDuERxmbSDuL3S0fu\nAsW+0T7b5yiIrlipwzZk/lVkQiP0jsFOasZVi9GmxFfwIvgKnrob2ulcfRtYe8Zs\nX2+ve7eF75WP1tLQi+soW9WFEhUS3Ki+luBjsJ32Zmx33kdLVq79hW3hAoGAB6u0\nga7mIytdk2gaNYfGzOwtxI0RZhua7rEYmd3GI5/BYDSmhszsYpST8LYjjV3Pw2bm\nlysJ9Id+AyoQTn47fzsk4q5rbc4sNeWkjQHcuLNzZfMUw3gwmvuqag90qhR2cGf8\nMOSz1+8NexE8IHz+d8l08debbafosw4oMKYM4MkCgYEAuDGl5g4mmGFnGyuipifD\nNVFpjZeeIA9T6ZULun1jv3aTJbsgj24IDPkyXwUiYQ7aLRcDMGqRaeFUQlpqQEEd\nVJPpGaFqkNF8dR7f+PgjZ10nXKGIvJkG38F7wxHXt5O2Uu3yZ3EZ9ZqPHlcbsVOU\nNg1szNtJrNxwZV19lgot2C8=\n-----END PRIVATE KEY-----\n",
+									"type": "string"
+								},
+								{
+									"key": "algorithm",
+									"value": "RS256",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "isSecretBase64Encoded",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "queryParamKey",
+									"value": "token",
+									"type": "string"
+								},
+								{
+									"key": "header",
+									"value": "{}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/development/v1/finance-service/finance-products/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"development",
+								"v1",
+								"finance-service",
+								"finance-products",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all finance products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/development/v1/finance-service/finance-products/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"development",
+								"v1",
+								"finance-service",
+								"finance-products",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post finance product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\": \"CAH\",\r\n    \"description\": \"Cuenta de ahorros\",\r\n    \"ruleSet\": \"{\\\"countries\\\": [\\\"CO\\\"], \\\"minAge\\\": 18,\\\"minIncome\\\": 0.0}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/development/v1/finance-service/finance-products/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"development",
+								"v1",
+								"finance-service",
+								"finance-products",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "put product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\": \"CAH\",\r\n    \"description\": \"Cuenta de ahorros\",\r\n    \"ruleSet\": \"{\\\"countries\\\": [\\\"CO\\\"], \\\"minAge\\\": 18,\\\"minIncome\\\": 0.0}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/development/v1/finance-service/finance-products/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"development",
+								"v1",
+								"finance-service",
+								"finance-products",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/development/v1/finance-service/finance-products/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"development",
+								"v1",
+								"finance-service",
+								"finance-products",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get openapi definition yaml",
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": [
+								{
+									"key": "payload",
+									"value": "{\r\n  \"sub\": \"finance-product\",\r\n  \"name\": \"finance-service\",\r\n  \"iat\": {{$timestamp}}\r\n}",
+									"type": "string"
+								},
+								{
+									"key": "privateKey",
+									"value": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCfM7fDdX09em6w\nmhRN59rwOdb0vdI22enYMr9TwfYFP/0gT+yv62R5es3+DnssnmfsJxW8mh1+bzkI\n+FuXztRthhKFdOdVY2mewL3aYJnDJ0d1zdrebt+jdSD6DU0rKEx7cJUK/vQghxx3\nzj5lJng6U9QmXZWLYKsdG87xAotqMEVBthtDlT0AT+iYQXOAb02xiOhZdFfdnAKG\naK7DhVfRX5mYAx15kY2gsErkTcVH/IdHH3qdKvSiSrtPjXuxaAU0B9oRQesrdLfb\nB0jZDF8i2lzvXkbpmLRnQdA48UCarUInF3BcD3JF8uozrQ15ilOYI9PAgCFWMYVT\nngJgg2PxAgMBAAECggEAOtejwUPIsZNyHCYnARCEVKwcLkOG0i1DCFzhaLTVGOWo\nymugIPmRHnFsd82kaz51TMy5dQdFhXjYjN83A2o4C+81I0ytQFtJK5sz0OZJjt8S\nw5D9p581W7YsJSALeLshYbKf8/t+AhPOSt3ZJAvO/kgDrtaCMozdUhn4KA53txxh\nD/XvLTVF8i/UFqg3pGWNYRI5x53eK/MMR4qgOTVBjAZ1hMQkclGeQVJp5HotR7yH\nBQ5j6T9mgnvGfdNn15+umPul6gxymVRt5ptHVuez5RUnLbfRQUunq4tClvP/+tSz\n604qNDxDXP4zvAK4zBQLM6814qm3wDPe7+Qzp+i1wQKBgQDK67id1Vg0VF+i0Oos\ngTXkau6upB1DaXfl2w82oQZhOCnSQHVS4373Lqen+0GNXO1sQuUX20ez3/hmLLy6\noPCPq9mfV5fUkt0DEJo9cBHCGSFuhGiCzLZPbchSJKD+xL1NueRfF8mhIBzt7cFK\npHAsfyeNHg262LibtpgRJunYuQKBgQDI2G/UKh6wryzGLjCle6/i2U650iy2kLn4\nbzSREUkREcvVqO9FzJLRxFLFm5c3rRD/9zQQ8KvIGZ/tMFKybTsp5Z/XbVh+K13/\n/CjF2LKiOreg7mED4bvMeuAp655hR1cgdxygDZNyVdpfzgGbramNpXUJKLvpBale\nFJUz4RBY+QKBgGnuC/449Ua8FQDF1rlM6nlHaTo56hza3gBcDuERxmbSDuL3S0fu\nAsW+0T7b5yiIrlipwzZk/lVkQiP0jsFOasZVi9GmxFfwIvgKnrob2ulcfRtYe8Zs\nX2+ve7eF75WP1tLQi+soW9WFEhUS3Ki+luBjsJ32Zmx33kdLVq79hW3hAoGAB6u0\nga7mIytdk2gaNYfGzOwtxI0RZhua7rEYmd3GI5/BYDSmhszsYpST8LYjjV3Pw2bm\nlysJ9Id+AyoQTn47fzsk4q5rbc4sNeWkjQHcuLNzZfMUw3gwmvuqag90qhR2cGf8\nMOSz1+8NexE8IHz+d8l08debbafosw4oMKYM4MkCgYEAuDGl5g4mmGFnGyuipifD\nNVFpjZeeIA9T6ZULun1jv3aTJbsgj24IDPkyXwUiYQ7aLRcDMGqRaeFUQlpqQEEd\nVJPpGaFqkNF8dR7f+PgjZ10nXKGIvJkG38F7wxHXt5O2Uu3yZ3EZ9ZqPHlcbsVOU\nNg1szNtJrNxwZV19lgot2C8=\n-----END PRIVATE KEY-----\n",
+									"type": "string"
+								},
+								{
+									"key": "algorithm",
+									"value": "RS256",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "isSecretBase64Encoded",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "queryParamKey",
+									"value": "token",
+									"type": "string"
+								},
+								{
+									"key": "header",
+									"value": "{}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/development/v1/finance-service/finance-products/v3/api-docs.yaml",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"development",
+								"v1",
+								"finance-service",
+								"finance-products",
+								"v3",
+								"api-docs.yaml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get openapi gui",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/development/v1/finance-service/finance-products/swagger-ui/index.html#/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"development",
+								"v1",
+								"finance-service",
+								"finance-products",
+								"swagger-ui",
+								"index.html"
+							],
+							"hash": "/"
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "integration",
+			"item": [
+				{
+					"name": "integration",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Message-Id",
+								"value": "{{$randomUUID}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:443/api/development/v1/finance-service/integration/calculate-best-finance-products/customers/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "443",
+							"path": [
+								"api",
+								"development",
+								"v1",
+								"finance-service",
+								"integration",
+								"calculate-best-finance-products",
+								"customers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "decision engine",
+			"item": [
+				{
+					"name": "run decision engine",
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": [
+								{
+									"key": "privateKey",
+									"value": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDI/+qrfII/6Tjp\nPnGMd7jgPKJG7Io/U/0EGeVNxwtjn0dXGZWHbXzFVqJ79OZ9mm354zsKy4n34Mxb\nN+FokvRIWc2go0HOGOXqEjEMWBD1BK8JyLp1TQFk2Q7/y6liX+zY6kO0u60m0g4S\n2WhNEjizK8v9tRVYVghTJRKS/pJJBtCHpadAhMItEuIi8ncIF8B7ckjhQMlCNlsf\nOLsyGwQUwNfzpmfk+s6QH0wECcBdWrOnVXaHgFu1gDLkFUHkY5B8jinUc1q6P84F\nZHDH1djcbk3s23dUEBKTN4Ex8mndsCOoUEOo8nZVUOAuT6smjfyZHceSYq5KRAzF\nB9RUyokPAgMBAAECggEAFvAVoMJRvudnpj6JCMW05Gom/r8Ju9Zi3m/yGiEn7JOF\nuaviw5S8E20il9DH6PeRq13CJCY8NXyC9bn30E5M8GDHNZjL7rAqtL6kuErojH2f\nWBd/J9nE2fRnYMumJeLajZqWZW6xgOeh0Ybb/0egDtplqitbJzySMKLfbsT8frbD\nT5M6rAFyU25p4RcsJ9t+TBR3yaw7SrpEUIFCc/A0akoVIlbLjslgRsSzdqf/RSpw\nuTJtHJRIS0O2PSedz9XH4d4Fq4fJt3y2hi4ICzcIR6CPkS6Pa99oexni/zHPcixB\n2Zsc7bsq/qkJ4cL4+4EJlmzcmcl8s1rK1ZtDwCCq+QKBgQD8DhurZ9pGoftXaaJM\nXi0mWN0crRbNpL3PwJQROogJaxX9zH1eYGsZOSP7IadAxVoncHuFQjjNrji2WQ8f\ndtfXBhWG7O4V43NsIyVuTMOHLsEpyQb+iKEUZ6J3vF4g7ooEn9cg1sb9vAATuwyl\nPhLwjSuT6yOodMqRIFF0Dh1OJQKBgQDMJT+Po8/iPCscP8N57/7cR8xAfzGVPK+V\nX1emVP9NaXh8jlRXMri/OiCVZh35YCZosmEaWG8yT0wXF6RyEFHIvbSWZE3yM04c\nTK4Knm19F7lJL0rZlHekBwNJKDGUjAgIck+hyEY2pShjwAIzp/4BNuNp8+qhlQEO\n6vtEZm1SIwKBgDbvrEAzpnN2op1uvJ0Aeb6955N0dl/j5Cr/wkXvB+9lk6l5hGmp\ngi5BMgJuV1Hascee0I0+3bqWmm3EA3PMJ0cKYG7D/TBwHpwXHPVpbcRtAFTnJ8sa\nZGFaJSMLv0hWNWbEn9LcfQqYizvBrQPm/6HGYxUeTutMaUowTRCKcwCxAoGAdENS\na6/TmPjDZJc78Jop/7I0NRc7Wc7yAJQICwalT6UdpXI5vl94sA+etvctYvTLax0M\nCEENMw3OO+iPExcQPM8tpekCK0nk1mElTY7ktDVqpK92ZWwUpyoHSQbHFd6aRJU1\nnOG+eyicVBLqLhkio/ZqldEAc3202JYi+9WJtRkCgYEA86kpon/oeC1BgTf8KK4x\njbbj2Q2IE50mYJyPnou5bwMAXyjr65GCCwUDDvFMxIoHh1tO7xBUxuX7kPBjvB2f\nIxoWgbvbsMbdoL9a5LvtF+9mHf68XAKyvWf0OWHQzqO95fLl5DafiWvsvs9dnwGw\nFmCpvgh4Vxb274RQf4mbw88=\n-----END PRIVATE KEY-----\n",
+									"type": "string"
+								},
+								{
+									"key": "payload",
+									"value": "{\r\n  \"sub\": \"customer\",\r\n  \"name\": \"finance-service\",\r\n  \"iat\": {{$timestamp}}\r\n}",
+									"type": "string"
+								},
+								{
+									"key": "algorithm",
+									"value": "RS256",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "isSecretBase64Encoded",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "queryParamKey",
+									"value": "token",
+									"type": "string"
+								},
+								{
+									"key": "header",
+									"value": "{}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customer\": {\r\n        \"customerId\": 1,\r\n        \"fullName\": \"Nombre 1\",\r\n        \"income\": 190123123.1,\r\n        \"city\": \"Bogotá\",\r\n        \"countryCode\": \"CO\",\r\n        \"age\": 30\r\n    },\r\n    \"financeProducts\": [\r\n        {\r\n            \"financeProductId\": 1,\r\n            \"code\": \"CAH\",\r\n            \"description\": \"Cuenta de ahorros\",\r\n            \"ruleSet\": \"{\\\"countries\\\": [\\\"CO\\\"], \\\"minAge\\\": 18,\\\"minIncome\\\": 0}\"\r\n        },\r\n        {\r\n            \"financeProductId\": 2,\r\n            \"code\": \"TDB\",\r\n            \"description\": \"Tarjeta débito\",\r\n            \"ruleSet\": \"{\\\"countries\\\": [\\\"CO\\\"], \\\"minAge\\\": 18,\\\"minIncome\\\": 1300000}\"\r\n        },\r\n        {\r\n            \"financeProductId\": 3,\r\n            \"code\": \"TDC\",\r\n            \"description\": \"Tarjeta de crédito\",\r\n            \"ruleSet\": \"{\\\"countries\\\": [\\\"CO\\\"], \\\"minAge\\\": 20,\\\"minIncome\\\": 2500000}\"\r\n        },\r\n        {\r\n            \"financeProductId\": 4,\r\n            \"code\": \"SEG\",\r\n            \"description\": \"Seguro\",\r\n            \"ruleSet\": \"{\\\"countries\\\": [], \\\"minAge\\\": 15,\\\"minIncome\\\": 800000}\"\r\n        },\r\n        {\r\n            \"financeProductId\": 5,\r\n            \"code\": \"INV\",\r\n            \"description\": \"Inversión\",\r\n            \"ruleSet\": \"{\\\"countries\\\": [], \\\"minAge\\\": 25,\\\"minIncome\\\": 4500000}\"\r\n        },\r\n        {\r\n            \"financeProductId\": 6,\r\n            \"code\": \"GIR\",\r\n            \"description\": \"Giro\",\r\n            \"ruleSet\": \"{\\\"countries\\\": [\\\"CO\\\", \\\"PE\\\", \\\"EC\\\", \\\"PA\\\"], \\\"minAge\\\": 0,\\\"minIncome\\\": 0.0}\"\r\n        },\r\n        {\r\n            \"financeProductId\": 7,\r\n            \"code\": \"TAM\",\r\n            \"description\": \"Tarjeta amparada\",\r\n            \"ruleSet\": \"{\\\"countries\\\": [], \\\"minAge\\\": 15,\\\"minIncome\\\": 0}\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/api/development/v1/finance-service/decision-engine/run",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"development",
+								"v1",
+								"finance-service",
+								"decision-engine",
+								"run"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get openapi definition yaml",
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": [
+								{
+									"key": "payload",
+									"value": "{\r\n  \"sub\": \"decision-engine\",\r\n  \"name\": \"finance-service\",\r\n  \"iat\": {{$timestamp}}\r\n}",
+									"type": "string"
+								},
+								{
+									"key": "privateKey",
+									"value": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDI/+qrfII/6Tjp\nPnGMd7jgPKJG7Io/U/0EGeVNxwtjn0dXGZWHbXzFVqJ79OZ9mm354zsKy4n34Mxb\nN+FokvRIWc2go0HOGOXqEjEMWBD1BK8JyLp1TQFk2Q7/y6liX+zY6kO0u60m0g4S\n2WhNEjizK8v9tRVYVghTJRKS/pJJBtCHpadAhMItEuIi8ncIF8B7ckjhQMlCNlsf\nOLsyGwQUwNfzpmfk+s6QH0wECcBdWrOnVXaHgFu1gDLkFUHkY5B8jinUc1q6P84F\nZHDH1djcbk3s23dUEBKTN4Ex8mndsCOoUEOo8nZVUOAuT6smjfyZHceSYq5KRAzF\nB9RUyokPAgMBAAECggEAFvAVoMJRvudnpj6JCMW05Gom/r8Ju9Zi3m/yGiEn7JOF\nuaviw5S8E20il9DH6PeRq13CJCY8NXyC9bn30E5M8GDHNZjL7rAqtL6kuErojH2f\nWBd/J9nE2fRnYMumJeLajZqWZW6xgOeh0Ybb/0egDtplqitbJzySMKLfbsT8frbD\nT5M6rAFyU25p4RcsJ9t+TBR3yaw7SrpEUIFCc/A0akoVIlbLjslgRsSzdqf/RSpw\nuTJtHJRIS0O2PSedz9XH4d4Fq4fJt3y2hi4ICzcIR6CPkS6Pa99oexni/zHPcixB\n2Zsc7bsq/qkJ4cL4+4EJlmzcmcl8s1rK1ZtDwCCq+QKBgQD8DhurZ9pGoftXaaJM\nXi0mWN0crRbNpL3PwJQROogJaxX9zH1eYGsZOSP7IadAxVoncHuFQjjNrji2WQ8f\ndtfXBhWG7O4V43NsIyVuTMOHLsEpyQb+iKEUZ6J3vF4g7ooEn9cg1sb9vAATuwyl\nPhLwjSuT6yOodMqRIFF0Dh1OJQKBgQDMJT+Po8/iPCscP8N57/7cR8xAfzGVPK+V\nX1emVP9NaXh8jlRXMri/OiCVZh35YCZosmEaWG8yT0wXF6RyEFHIvbSWZE3yM04c\nTK4Knm19F7lJL0rZlHekBwNJKDGUjAgIck+hyEY2pShjwAIzp/4BNuNp8+qhlQEO\n6vtEZm1SIwKBgDbvrEAzpnN2op1uvJ0Aeb6955N0dl/j5Cr/wkXvB+9lk6l5hGmp\ngi5BMgJuV1Hascee0I0+3bqWmm3EA3PMJ0cKYG7D/TBwHpwXHPVpbcRtAFTnJ8sa\nZGFaJSMLv0hWNWbEn9LcfQqYizvBrQPm/6HGYxUeTutMaUowTRCKcwCxAoGAdENS\na6/TmPjDZJc78Jop/7I0NRc7Wc7yAJQICwalT6UdpXI5vl94sA+etvctYvTLax0M\nCEENMw3OO+iPExcQPM8tpekCK0nk1mElTY7ktDVqpK92ZWwUpyoHSQbHFd6aRJU1\nnOG+eyicVBLqLhkio/ZqldEAc3202JYi+9WJtRkCgYEA86kpon/oeC1BgTf8KK4x\njbbj2Q2IE50mYJyPnou5bwMAXyjr65GCCwUDDvFMxIoHh1tO7xBUxuX7kPBjvB2f\nIxoWgbvbsMbdoL9a5LvtF+9mHf68XAKyvWf0OWHQzqO95fLl5DafiWvsvs9dnwGw\nFmCpvgh4Vxb274RQf4mbw88=\n-----END PRIVATE KEY-----",
+									"type": "string"
+								},
+								{
+									"key": "algorithm",
+									"value": "RS256",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "isSecretBase64Encoded",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "queryParamKey",
+									"value": "token",
+									"type": "string"
+								},
+								{
+									"key": "header",
+									"value": "{}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8082/api/development/v1/finance-service/decision-engine/v3/api-docs.yaml",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"development",
+								"v1",
+								"finance-service",
+								"decision-engine",
+								"v3",
+								"api-docs.yaml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get openapi gui",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/api/development/v1/finance-service/decision-engine/swagger-ui/index.html#/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"development",
+								"v1",
+								"finance-service",
+								"decision-engine",
+								"swagger-ui",
+								"index.html"
+							],
+							"hash": "/"
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
