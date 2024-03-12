@@ -4,7 +4,7 @@
 
 Habiendo analizado a fondo el problema propuesto, se planteó la creación de 3 proyectos back-end: El primero sería el encargado de almacenar y procesar la información relacionada con los clientes, el segundo todo lo relacionado con los productos financieros, y el último en cambio tiene la tarea de recibir la información de un cliente así como los productos financieros y retornar entonces cuáles de estos productos son aptos para el cliente en cuestión dadas las reglas establecidas para cada uno de estos productos.
 
-#### <a href="./collections/FinanceService_collection.json" download>Descargar colección Postman</a>
+#### <a href="collections/FinanceService_collection.json" download>Descargar colección Postman</a>
 
 ## Proyectos
 
